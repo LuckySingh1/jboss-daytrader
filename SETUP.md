@@ -48,7 +48,7 @@ Following blocks should appear in `standalone/configuration/standalone-full.xml`
 - Then, startup JBoss EAP using the  _Full_  profile, e.g.
 
 ```
-bin/standalone.sh -c standalone-full.xml
+bin/standalone.bat -c standalone-full.xml
 ```
 
 - And access the app using  `http://<hostname>/daytrader`, for example  `http://localhost:8080/daytrader`
