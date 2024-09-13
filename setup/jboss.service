@@ -1,0 +1,14 @@
+[Unit]
+Description=JBoss
+
+[Service]
+User=pdbadwal
+WorkingDirectory=/home/pdbadwal/app/jboss-eap-7.4/bin
+ExecStart=bash /home/pdbadwal/app/jboss-eap-7.4/bin/run.sh
+Type=simple
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
